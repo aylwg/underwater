@@ -1,7 +1,3 @@
-// final project for CS324E - graphics and visualization
-// Audrey Wang
-// 5/13/2019
-
 // sprite sheet decomposer used https://github.com/ForkandBeard/Alferd-Spritesheet-Unpacker/releases 
 // scrolling code adapted from https://discourse.processing.org/t/processing-3-moving-through-a-map-bigger-than-the-screen/10393/4
 // health bar code adapted from https://www.openprocessing.org/sketch/120612/
