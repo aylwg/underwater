@@ -198,7 +198,7 @@ void draw() {
     }
   }
   
-  // UPON PRESSING HIGH SCORES BUTTON, SCORES APPEAR - create scores handler?
+  // UPON PRESSING HIGH SCORES BUTTON, SCORES APPEAR - create scores handler
   
   if (hiscore) {
     textSize(50);
@@ -221,11 +221,7 @@ void draw() {
     textSize(30);
     backButton.display();
   }
-  
-  // UPON PRESSING SETTINGS BUTTON, SETTINGS APPEAR
-  // removed because sound is frustrating 
-  
-  // are there settings? ... sound settings, changing hot keys
+ 
   if (settings) {
     String settings = "Settings";
     textSize(50);
@@ -241,7 +237,7 @@ void draw() {
   
   // UPON PRESSING CREDITS BUTTON, CREDITS APPEAR
   
-  // credits... 
+  // credits
   if (credits) {
     String credit = "Credits";
     textSize(50);
@@ -410,9 +406,7 @@ ArrayList getHighScore() {
     filescore = String.format("%03d", intscore);
     filescores.add(filescore);
   }
-  //println(filescores);
   Collections.sort(filescores, Collections.reverseOrder());
-  //println(filescores);
   if (filescores.size() > max) {
     ArrayList<String> topscores = new ArrayList<String>(filescores.subList(0, max));
     return topscores;
@@ -509,7 +503,7 @@ void mousePressed() {
       restartGame();
       open = true;
 
-      pauseButton.hover = false; // what's going on here
+      pauseButton.hover = false;
       first = false;
       if (!gameplayMusic.isMuted()) {
         gameplayMusic.mute();
